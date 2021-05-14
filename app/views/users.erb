@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color: magenta;">
+    <% @users.each do |u| %>
+    <h2 style="text-decoration: underline;"><%= u.name %></h2>
+        <ul>
+            <% u.dogs.each do |d| %>
+            <li style="color: blue;"><%= d.name %></li>
+            <% end %>
+        </ul>
+    <% end %>
+</body>
+</html> 
+

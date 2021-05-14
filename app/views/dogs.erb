@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color: purple;">
+    <div id="dog_container" style="border: 5px double green; display: flex; justify-content: space-between;">
+        <h1>Available Dogs</h1>
+        <% @dogs.each do |d| %>
+        <h2><%= d.name %></h2>
+        <h3><%= d.age %></h3>
+        <img src=<%= d.img_url %> alt="Dog Photo" width="600px" height="400px"/>
+        <% end %>
+    </div>
+</body>
+</html> 
+
